@@ -79,7 +79,7 @@ import java.util.Scanner;
 
 
 
-                } while(score <=40 && response.equalsIgnoreCase("yes"));
+                } while(score <=100 && response.equalsIgnoreCase("yes"));
 
             }
     }
