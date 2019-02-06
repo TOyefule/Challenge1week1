@@ -39,7 +39,6 @@ import java.util.Scanner;
 
 
                     // System Output : Prompts the User
-                    // System.out.println("Your rolls are " + num1 + " & " + num2);
                      System.out.println("You have thrown "+ num1 +" and "+ num2 +".");
                     // System.out.println("your score is " + score);
 //                     score = score + (num1 + num2);
@@ -67,19 +66,23 @@ import java.util.Scanner;
                         score = score + (num1 + num2);
                         System.out.println(score);
                     }
-//
+                         
 //                    else  {
 //                        score = num1 + num2;
-//
 //                    }
+                         
                      System.out.println("Roll again?");
                      response = sc.next();
-
-                    System.out.println();
-
+                     System.out.println();
 
 
                 } while(score <=100 && response.equalsIgnoreCase("yes"));
 
+                     if (sum > 100) {
+
+            System.out.println("You have scored over 100");
+
             }
+                    System.out.println("Thanks for playing!");
+
     }
